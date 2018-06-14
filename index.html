@@ -50,12 +50,15 @@
 
   </head>
   <body>
+
          <div class="container" style="text-align:center; margin-top:5%; left: 0; bottom: 0%;">
             <div class="row">
                 <div class="col-md-8 offset-md-2">
-                <h1> Pick your character </h1>
+                <h1 class="instructions"> Pick your character </h1>
                 </div>
             </div>
+
+            <!-- Character Selection -->
             <div class="row">
               <div id="luke" class="col-md-3 col-sm-3 col-xs-3">
                   <p> Luke </p>
@@ -79,7 +82,9 @@
               </div> 
            </div>
         </div>
-         <div id="battlefield" class="container"> 
+
+        <!-- Combat area for the characters  -->
+        <div id="battlefield" class="container"> 
             <div class="row">
                 <div class="col-md-4 col-sm-4 col-lg-4"><h1 style="padding-left:2%">  Your Character</h1></div>
                 <div class="col-md-4 offset-md-4 col-sm-4 offset-sm-4 col-lg-4 offset-lg-4"><h1 style="padding-left:2%">  Current Defender</h1></div>
@@ -96,7 +101,7 @@
             </div> 
         </div>
 
-
+        <!-- Combat log, showing the results of each attack -->
         <div id="log" class="container" style="position:fixed; height:90px; background-color: grey; bottom: 0; margin: 0 auto; max-width:100%; opacity: 1">
             <div class="row"><h1 style="padding-left:40%; margin-bottom: 1px">Combat Log</h1></div>
             <div class="row"><p class="combatLog" style="padding-left: 100%; text-align: center;"></p></div>
