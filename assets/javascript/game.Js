@@ -21,7 +21,7 @@ $(document).ready(function(){
 
             var vader = {
                 name: "Darth Vader",
-                HP: "160",
+                HP: "170",
                 status: "standby",
                 attack: 15,
                 counterAttack: 15
@@ -336,6 +336,12 @@ $(document).ready(function(){
                     //If the player runs out of hp, game over
                     } else if (player.HP <= 0){
                         $(".instructions").html("Game over!");
+                        $(".enemies").remove();
+                        $(".enemiesHeader").remove();
+                        $(".yourCharacter").html("<img src='assets/images/lose.jpg'/>");
+                        $(".combatLog").attr("style", "color:red; width: 100%; text-align: center; margin-right: 40px");
+                        $(".combatLog").append("<br>");
+                        $(".combatLog").append(player.name + " has been defeated. Game over.");
                     }
               }
             });
