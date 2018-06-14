@@ -295,7 +295,7 @@ $(document).ready(function(){
                         player.status = "player";
                         enemy.status = "dead";
 
-                        $(".combatLog").attr("style", "color:red; width: 100%; text-align: center");
+                        $(".combatLog").attr("style", "color:gold; width: 100%; text-align: center; margin-right: 40px");
                         $(".combatLog").append("<br>");
                         $(".combatLog").append(enemy.name + " has been slain! You won! ");
                     
