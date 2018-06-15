@@ -5,7 +5,7 @@ $(document).ready(function(){
             // Characters
             var luke = {
                 name: "Luke",
-                HP: "150",
+                HP: "155",
                 status: "standby",
                 attack: 5,
                 counterAttack: 5
@@ -303,7 +303,7 @@ $(document).ready(function(){
                     $(".combatLog").text(player.name + " has attacked " + enemy.name + " for " + player.attack + " damage! "  + enemy.name + " has attacked " + player.name + " for " + enemy.attack + " damage.")
 
                     //If the enemy has no more HP left, you win
-                    if (enemy.HP <= 0){
+                    if (enemy.HP <= 0 & player.HP > 0){
                         $(".target").remove();
                         $(".instructions").html("Victory! Pick your next enemy");
                         
