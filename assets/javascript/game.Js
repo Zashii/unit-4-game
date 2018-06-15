@@ -338,6 +338,7 @@ $(document).ready(function(){
                         $(".instructions").html("Game over!");
                         $(".enemies").remove();
                         $(".enemiesHeader").remove();
+                        $(".characterHeader").remove();
                         $(".yourCharacter").html("<img src='assets/images/lose.jpg'/>");
                         $(".combatLog").attr("style", "color:red; width: 100%; text-align: center; margin-right: 40px");
                         $(".combatLog").append("<br>");
