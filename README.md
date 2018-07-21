@@ -1,5 +1,7 @@
 # Star Wars Game
 
+Deployed Link: https://zashii.github.io/unit-4-game/
+
 This is a game where you can pick one of four characters to battle with the other 3. 
 
 The player does more and more damage as he attacks!
